@@ -1,3 +1,6 @@
-FROM node:7.2
+FROM node:alpine
 
-RUN apt-get install -y git
+RUN apk add --no-cache \
+    curl \
+    git \
+    patch
