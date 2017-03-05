@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+docker build -f drupal/Dockerfile -t drupal8up/drupal:latest ./drupal
+docker build -f node/Dockerfile -t drupal8up/node:latest ./node
